@@ -1,0 +1,564 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+          content="Organizaê: painel acadêmico responsivo feito com Bootstrap 5.">
+
+    <title>Organizaê | Painel de Estudos</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary"
+             aria-label="Navegação principal">
+
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#inicio">
+                    Organizaê
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menu de navegação"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recursos">Recursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#atividades">Atividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cadastro">Cadastrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="inicio">
+
+        <section class="container py-5" aria-labelledby="tituloPrincipal">
+            <div class="row align-items-center g-4">
+
+                <div class="col-lg-5">
+                    <span class="badge text-bg-light border text-primary mb-3">
+                        Seu espaço de organização
+                    </span>
+
+                    <h1 class="display-5 fw-bold" id="tituloPrincipal">
+                        Organize seus estudos com mais facilidade.
+                    </h1>
+
+                    <p class="lead text-secondary">
+                        Acompanhe atividades, organize prioridades e
+                        mantenha seus prazos em um só lugar.
+                    </p>
+
+                    <a class="btn btn-primary btn-lg" href="#cadastro">
+                        Adicionar atividade
+                    </a>
+                </div>
+
+                <div class="col-lg-7">
+                    <div
+                        id="carrosselDestaques"
+                        class="carousel slide shadow-sm rounded-4 overflow-hidden"
+                        aria-label="Destaques do Organizaê"
+                    >
+
+                        <div class="carousel-indicators">
+                            <button
+                                type="button"
+                                data-bs-target="#carrosselDestaques"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+
+                            <button
+                                type="button"
+                                data-bs-target="#carrosselDestaques"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                            ></button>
+
+                            <button
+                                type="button"
+                                data-bs-target="#carrosselDestaques"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                            ></button>
+                        </div>
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="painel-destaque destaque-um">
+                                    <div class="icone-destaque" aria-hidden="true">📚</div>
+                                    <h2>Planeje sua semana</h2>
+                                    <p>Visualize o que precisa estudar.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="painel-destaque destaque-dois">
+                                    <div class="icone-destaque" aria-hidden="true">🎯</div>
+                                    <h2>Defina prioridades</h2>
+                                    <p>Concentre-se nas atividades importantes.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="painel-destaque destaque-tres">
+                                    <div class="icone-destaque" aria-hidden="true">✅</div>
+                                    <h2>Acompanhe suas entregas</h2>
+                                    <p>Veja o que já foi concluído.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carrosselDestaques"
+                            data-bs-slide="prev"
+                        >
+                            <span class="carousel-control-prev-icon"
+                                  aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carrosselDestaques"
+                            data-bs-slide="next"
+                        >
+                            <span class="carousel-control-next-icon"
+                                  aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container pb-5"
+                 id="recursos"
+                 aria-labelledby="tituloRecursos">
+
+            <h2 class="fw-bold mb-2" id="tituloRecursos">
+                Recursos do painel
+            </h2>
+
+            <p class="text-secondary mb-4">
+                Três formas simples de acompanhar sua rotina acadêmica.
+            </p>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col">
+                    <article class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="icone-cartao" aria-hidden="true">📝</div>
+                            <h3 class="h5 card-title">Cadastro de tarefas</h3>
+                            <p class="card-text text-secondary">
+                                Registre suas atividades e organize os próximos compromissos.
+                            </p>
+                            <a href="#cadastro" class="btn btn-outline-primary">
+                                Cadastrar
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="icone-cartao" aria-hidden="true">📅</div>
+                            <h3 class="h5 card-title">Prazos organizados</h3>
+                            <p class="card-text text-secondary">
+                                Consulte as datas de entrega e evite esquecer suas tarefas.
+                            </p>
+                            <a href="#atividades" class="btn btn-outline-primary">
+                                Ver atividades
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="icone-cartao" aria-hidden="true">📊</div>
+                            <h3 class="h5 card-title">Acompanhamento</h3>
+                            <p class="card-text text-secondary">
+                                Confira quais atividades estão pendentes ou concluídas.
+                            </p>
+                            <a href="#atividades" class="btn btn-outline-primary">
+                                Acompanhar
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="bg-white py-5"
+                 id="atividades"
+                 aria-labelledby="tituloAtividades">
+
+            <div class="container">
+
+                <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-4">
+                    <div>
+                        <h2 class="fw-bold mb-1" id="tituloAtividades">
+                            Minhas atividades
+                        </h2>
+                        <p class="text-secondary mb-0">
+                            Acompanhe e atualize a situação das suas tarefas acadêmicas.
+                        </p>
+                    </div>
+
+                    <span class="badge text-bg-primary"
+                          id="contadorAtividades"
+                          aria-live="polite">
+                        5 atividades
+                    </span>
+                </div>
+
+                <div class="table-responsive rounded-3 border">
+                    <table class="table table-striped table-hover align-middle mb-0">
+
+                        <caption class="visually-hidden">
+                            Lista de atividades com disciplina, prazo, situação e ações
+                        </caption>
+
+                        <thead class="table-primary">
+                            <tr>
+                                <th scope="col">Atividade</th>
+                                <th scope="col">Disciplina</th>
+                                <th scope="col">Prazo</th>
+                                <th scope="col">Situação</th>
+                                <th scope="col">Ações</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="corpoTabela"></tbody>
+
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container py-5"
+                 id="cadastro"
+                 aria-labelledby="tituloCadastro">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+
+                    <h2 class="fw-bold mb-2" id="tituloCadastro">
+                        Cadastrar atividade
+                    </h2>
+
+                    <p class="text-secondary">
+                        Preencha os dados abaixo para adicionar uma tarefa à tabela.
+                    </p>
+
+                    <form
+                        id="formAtividade"
+                        class="card border-0 shadow-sm p-4 formulario-atividade"
+                        novalidate
+                    >
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label for="nomeAtividade" class="form-label">
+                                    Nome da atividade
+                                </label>
+
+                                <input
+                                    id="nomeAtividade"
+                                    class="form-control"
+                                    type="text"
+                                    minlength="3"
+                                    maxlength="80"
+                                    placeholder="Ex.: Estudar Bootstrap"
+                                    required
+                                >
+
+                                <div class="invalid-feedback">
+                                    Informe uma atividade com pelo menos 3 caracteres.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">
+                                    E-mail
+                                </label>
+
+                                <input
+                                    id="email"
+                                    class="form-control"
+                                    type="email"
+                                    placeholder="seuemail@exemplo.com"
+                                    required
+                                >
+
+                                <div class="invalid-feedback">
+                                    Informe um e-mail válido.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <label id="rotuloDisciplina" class="form-label">
+                                    Disciplina
+                                </label>
+
+                                <div class="dropdown w-100">
+
+                                    <button
+                                        class="btn btn-outline-secondary dropdown-toggle w-100 text-start d-flex justify-content-between align-items-center"
+                                        type="button"
+                                        id="botaoDisciplina"
+                                        data-bs-toggle="dropdown"
+                                        data-bs-display="static"
+                                        aria-expanded="false"
+                                        aria-labelledby="rotuloDisciplina botaoDisciplina"
+                                    >
+                                        <span id="textoDisciplina">Selecione</span>
+                                    </button>
+
+                                    <ul
+                                        class="dropdown-menu w-100"
+                                        aria-labelledby="botaoDisciplina"
+                                        style="max-height: 220px; overflow-y: auto; min-width: 0; max-width: 100%;"
+                                    >
+                                        <li>
+                                            <button class="dropdown-item text-wrap" type="button" data-disciplina="Desenvolvimento Web">
+                                                Desenvolvimento Web
+                                            </button>
+                                        </li>
+
+                                        <li>
+                                            <button class="dropdown-item text-wrap" type="button" data-disciplina="Banco de Dados">
+                                                Banco de Dados
+                                            </button>
+                                        </li>
+
+                                        <li>
+                                            <button class="dropdown-item text-wrap" type="button" data-disciplina="Engenharia de Software">
+                                                Engenharia de Software
+                                            </button>
+                                        </li>
+
+                                        <li>
+                                            <button class="dropdown-item text-wrap" type="button" data-disciplina="Algoritmos">
+                                                Algoritmos
+                                            </button>
+                                        </li>
+
+                                        <li>
+                                            <button class="dropdown-item text-wrap" type="button" data-disciplina="Outras">
+                                                Outras
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <select
+                                    id="disciplina"
+                                    name="disciplina"
+                                    class="form-select visually-hidden position-absolute"
+                                    tabindex="-1"
+                                    aria-hidden="true"
+                                    required
+                                >
+                                    <option value="">Selecione</option>
+                                    <option>Desenvolvimento Web</option>
+                                    <option>Banco de Dados</option>
+                                    <option>Engenharia de Software</option>
+                                    <option>Algoritmos</option>
+                                    <option>Outras</option>
+                                </select>
+
+                                <div class="invalid-feedback">
+                                    Selecione uma disciplina.
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="prazo" class="form-label">
+                                    Data de entrega
+                                </label>
+
+                                <input
+                                    id="prazo"
+                                    class="form-control"
+                                    type="date"
+                                    required
+                                >
+
+                                <div class="invalid-feedback">
+                                    Informe a data de entrega.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="observacoes" class="form-label">
+                                    Observações
+                                </label>
+
+                                <textarea
+                                    id="observacoes"
+                                    class="form-control"
+                                    rows="3"
+                                    maxlength="300"
+                                    placeholder="Detalhes da atividade (opcional)"
+                                ></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">
+                                    Cadastrar atividade
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                    <p class="small text-secondary mt-3">
+                        Os dados são demonstrativos e ficam armazenados somente
+                        neste navegador. O e-mail não é enviado.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-primary text-white py-4">
+        <div class="container text-center">
+            <p class="mb-1 fw-semibold">
+                Organizaê — Painel de Estudos
+            </p>
+            <small>Projeto acadêmico desenvolvido com Bootstrap 5.</small>
+        </div>
+    </footer>
+
+    <div
+        class="modal fade"
+        id="modalConfirmacao"
+        tabindex="-1"
+        aria-labelledby="tituloModal"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="tituloModal">
+                        Atividade cadastrada!
+                    </h2>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Fechar"
+                    ></button>
+                </div>
+
+                <div class="modal-body">
+                    <p class="mb-0" id="mensagemModal">
+                        Sua atividade foi adicionada à tabela.
+                    </p>
+                </div>
+
+                <div class="modal-footer">
+                    <button
+                        type="button"
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                    >
+                        Fechar
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="verAtividades"
+                        data-bs-dismiss="modal"
+                    >
+                        Ver atividades
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const campoDisciplina = document.getElementById("disciplina");
+        const textoDisciplina = document.getElementById("textoDisciplina");
+        const formularioAtividade = document.getElementById("formAtividade");
+
+        document.querySelectorAll("[data-disciplina]").forEach(function (opcao) {
+            opcao.addEventListener("click", function () {
+                campoDisciplina.value = opcao.dataset.disciplina;
+                textoDisciplina.textContent = opcao.dataset.disciplina;
+
+                campoDisciplina.dispatchEvent(
+                    new Event("change", { bubbles: true })
+                );
+            });
+        });
+
+        formularioAtividade.addEventListener("reset", function () {
+            textoDisciplina.textContent = "Selecione";
+        });
+    </script>
+
+    <script src="funcoes.js"></script>
+
+</body>
+</html>

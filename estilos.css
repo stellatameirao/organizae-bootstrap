@@ -1,0 +1,177 @@
+:root {
+    --bs-primary: #5146b5;
+    --bs-primary-rgb: 81, 70, 181;
+}
+
+body {
+    background: #f6f7fc;
+    color: #25243d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar,
+footer {
+    background-color: #5146b5 !important;
+}
+
+.btn-primary {
+    background-color: #5146b5;
+    border-color: #5146b5;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #3f3695;
+    border-color: #3f3695;
+}
+
+.btn-outline-primary {
+    color: #5146b5;
+    border-color: #5146b5;
+}
+
+.btn-outline-primary:hover {
+    background-color: #5146b5;
+    border-color: #5146b5;
+}
+
+.text-primary {
+    color: #5146b5 !important;
+}
+
+.table-primary {
+    --bs-table-bg: #e9e6ff;
+    --bs-table-border-color: #dedaf7;
+}
+
+.card {
+    border-radius: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.icone-cartao {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.painel-destaque {
+    min-height: 330px;
+    padding: 3.5rem 4rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.painel-destaque h2 {
+    font-weight: 700;
+}
+
+.icone-destaque {
+    font-size: 4rem;
+    margin-bottom: 0.8rem;
+}
+
+.destaque-um {
+    background: linear-gradient(125deg, #5146b5, #8e78dc);
+}
+
+.destaque-dois {
+    background: linear-gradient(125deg, #196e83, #42a6a3);
+}
+
+.destaque-tres {
+    background: linear-gradient(125deg, #7a3c8d, #c477aa);
+}
+
+.carousel-indicators {
+    margin-bottom: 0.5rem;
+}
+
+.formulario-atividade {
+    width: 100%;
+    min-width: 0;
+}
+
+.formulario-atividade select {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+#disciplina {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+    .painel-destaque {
+        min-height: 270px;
+        padding: 3rem 2.6rem;
+    }
+
+    .painel-destaque h2 {
+        font-size: 1.35rem;
+    }
+
+    .icone-destaque {
+        font-size: 3rem;
+    }
+
+    .formulario-atividade {
+        padding: 15px;
+    }
+
+    .formulario-atividade select {
+        font-size: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .card {
+        transition: none;
+    }
+}
+
+.formulario-atividade .dropdown {
+    min-width: 0;
+}
+
+.formulario-atividade .dropdown-menu {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.formulario-atividade .dropdown-item {
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.formulario-atividade:has(#disciplina:invalid).was-validated
+#botaoDisciplina {
+    border-color: #dc3545;
+}
+
+.formulario-atividade.was-validated
+#disciplina:invalid ~ .invalid-feedback {
+    display: block;
+}
