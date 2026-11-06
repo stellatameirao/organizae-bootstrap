@@ -166,12 +166,10 @@ footer {
     overflow-wrap: anywhere;
 }
 
-.formulario-atividade:has(#disciplina:invalid).was-validated
-#botaoDisciplina {
+.formulario-atividade:has(#disciplina:invalid).was-validated #botaoDisciplina {
     border-color: #dc3545;
 }
 
-.formulario-atividade.was-validated
-#disciplina:invalid ~ .invalid-feedback {
+.formulario-atividade.was-validated #disciplina:invalid~.invalid-feedback {
     display: block;
 }
