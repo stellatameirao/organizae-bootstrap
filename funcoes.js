@@ -130,3 +130,12 @@ document.getElementById('verAtividades').addEventListener('click', () => {
 
 carregarSituacoesIniciais();
 listarAtividades();
+
+const carrossel = document.getElementById('carrosselDestaques');
+
+if (carrossel) {
+  bootstrap.Carousel.getOrCreateInstance(carrossel, {
+    interval: false,
+    touch: true
+  });
+}
