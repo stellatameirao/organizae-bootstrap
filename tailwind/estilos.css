@@ -1,0 +1,6 @@
+/* Pequenos ajustes; layout, cores, espaçamentos e responsividade usam Tailwind. */
+html { scroll-behavior: smooth; }
+.campo { display: block; width: 100%; min-width: 0; border: 1px solid #cbd5e1; border-radius: .5rem; background: white; padding: .7rem .85rem; outline-offset: 2px; }
+.campo:focus { outline: 2px solid #5146b5; border-color: #5146b5; }
+.campo.invalido { border-color: #dc2626; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
