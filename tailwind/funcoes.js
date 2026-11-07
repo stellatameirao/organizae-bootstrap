@@ -70,7 +70,7 @@ function carregarSituacoesIniciais() {
       }
     });
   } catch {
-    // Mantém os dados iniciais.
+    
   }
 }
 
@@ -181,7 +181,6 @@ function alternarConclusaoAtividade(identificador) {
   listarAtividades();
 }
 
-// Navbar responsiva
 const botaoMenu = document.getElementById('botaoMenu');
 const menuPrincipal = document.getElementById('menuPrincipal');
 
@@ -204,7 +203,7 @@ menuPrincipal.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', fecharMenu);
 });
 
-// Carousel
+
 const carrossel = document.getElementById('carrosselDestaques');
 const slides = [...carrossel.querySelectorAll('.slide')];
 const indicadores = [...carrossel.querySelectorAll('.indicador')];
@@ -269,7 +268,6 @@ carrossel.addEventListener('keydown', evento => {
 
 mostrarSlide(0);
 
-// Modal
 const modal = document.getElementById('modalConfirmacao');
 const conteudoModal = document.getElementById('conteudoModal');
 const mensagemModal = document.getElementById('mensagemModal');
@@ -358,7 +356,6 @@ document.getElementById('verAtividades').addEventListener('click', () => {
   });
 });
 
-// Validação do formulário
 function validarCampos() {
   let valido = true;
 

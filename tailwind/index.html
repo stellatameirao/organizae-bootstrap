@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,48 +9,88 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body class="bg-[#f6f7fc] text-[#25243d] antialiased">
   <header class="bg-[#5146b5] text-white">
     <nav class="mx-auto max-w-6xl px-5 py-4" aria-label="Navegação principal">
       <div class="flex items-center justify-between gap-4">
         <a class="text-xl font-bold tracking-tight" href="#inicio">Organizaê</a>
-        <button id="botaoMenu" type="button" class="rounded-lg border border-white/40 p-2 lg:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" aria-label="Abrir menu de navegação" aria-controls="menuPrincipal" aria-expanded="false">
-          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <button id="botaoMenu" type="button"
+          class="rounded-lg border border-white/40 p-2 lg:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          aria-label="Abrir menu de navegação" aria-controls="menuPrincipal" aria-expanded="false">
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
         </button>
         <ul class="hidden items-center gap-7 text-sm font-medium lg:flex" id="menuDesktop">
-          <li><a class="hover:text-white/75" href="#inicio">Início</a></li><li><a class="hover:text-white/75" href="#recursos">Recursos</a></li><li><a class="hover:text-white/75" href="#atividades">Atividades</a></li><li><a class="hover:text-white/75" href="#cadastro">Cadastrar</a></li>
+          <li><a class="hover:text-white/75" href="#inicio">Início</a></li>
+          <li><a class="hover:text-white/75" href="#recursos">Recursos</a></li>
+          <li><a class="hover:text-white/75" href="#atividades">Atividades</a></li>
+          <li><a class="hover:text-white/75" href="#cadastro">Cadastrar</a></li>
         </ul>
       </div>
-      <ul id="menuPrincipal" class="mt-4 hidden flex-col gap-1 border-t border-white/20 pt-3 text-sm font-medium lg:hidden">
-        <li><a class="block rounded-lg px-3 py-2 hover:bg-white/15" href="#inicio">Início</a></li><li><a class="block rounded-lg px-3 py-2 hover:bg-white/15" href="#recursos">Recursos</a></li><li><a class="block rounded-lg px-3 py-2 hover:bg-white/15" href="#atividades">Atividades</a></li><li><a class="block rounded-lg px-3 py-2 hover:bg-white/15" href="#cadastro">Cadastrar</a></li>
+      <ul id="menuPrincipal"
+        class="mt-4 hidden flex-col gap-1 border-t border-white/20 pt-3 text-sm font-medium lg:hidden">
+        <li><a class="block rounded-lg px-3 py-2 hover:bg-white/15" href="#inicio">Início</a></li>
+        <li><a class="block rounded-lg px-3 py-2 hover:bg-white/15" href="#recursos">Recursos</a></li>
+        <li><a class="block rounded-lg px-3 py-2 hover:bg-white/15" href="#atividades">Atividades</a></li>
+        <li><a class="block rounded-lg px-3 py-2 hover:bg-white/15" href="#cadastro">Cadastrar</a></li>
       </ul>
     </nav>
   </header>
   <main id="inicio">
-    <section class="mx-auto grid max-w-6xl items-center gap-10 px-5 py-14 lg:grid-cols-12" aria-labelledby="tituloPrincipal">
+    <section class="mx-auto grid max-w-6xl items-center gap-10 px-5 py-14 lg:grid-cols-12"
+      aria-labelledby="tituloPrincipal">
       <div class="lg:col-span-5">
-        <span class="mb-5 inline-flex rounded-full border border-[#dedaf7] bg-white px-3 py-1 text-sm font-semibold text-[#5146b5]">Seu espaço de organização</span>
-        <h1 id="tituloPrincipal" class="text-4xl font-bold leading-tight tracking-tight md:text-5xl">Organize seus estudos com mais facilidade.</h1>
-        <p class="mt-5 text-lg leading-relaxed text-slate-600">Acompanhe atividades, organize prioridades e mantenha seus prazos em um só lugar.</p>
-        <a href="#cadastro" class="mt-7 inline-block rounded-lg bg-[#5146b5] px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-[#3f3695]">Adicionar atividade</a>
+        <span
+          class="mb-5 inline-flex rounded-full border border-[#dedaf7] bg-white px-3 py-1 text-sm font-semibold text-[#5146b5]">Seu
+          espaço de organização</span>
+        <h1 id="tituloPrincipal" class="text-4xl font-bold leading-tight tracking-tight md:text-5xl">Organize seus
+          estudos com mais facilidade.</h1>
+        <p class="mt-5 text-lg leading-relaxed text-slate-600">Acompanhe atividades, organize prioridades e mantenha
+          seus prazos em um só lugar.</p>
+        <a href="#cadastro"
+          class="mt-7 inline-block rounded-lg bg-[#5146b5] px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-[#3f3695]">Adicionar
+          atividade</a>
       </div>
       <div class="lg:col-span-7">
-        <div id="carrosselDestaques" class="relative min-h-72 overflow-hidden rounded-2xl shadow-lg sm:min-h-80" aria-label="Destaques do Organizaê" aria-roledescription="carrossel" tabindex="0">
-          <div class="slide absolute inset-0 flex opacity-100 transition-opacity duration-500 ease-in-out min-h-72 flex-col items-center justify-center bg-gradient-to-br from-[#5146b5] to-[#8e78dc] px-14 py-12 text-center text-white sm:min-h-80" aria-label="Slide 1 de 3">
-            <div class="mb-4 text-6xl" aria-hidden="true">📚</div><h2 class="text-2xl font-bold">Planeje sua semana</h2><p class="mt-2">Visualize o que precisa estudar.</p>
+        <div id="carrosselDestaques" class="relative min-h-72 overflow-hidden rounded-2xl shadow-lg sm:min-h-80"
+          aria-label="Destaques do Organizaê" aria-roledescription="carrossel" tabindex="0">
+          <div
+            class="slide absolute inset-0 flex opacity-100 transition-opacity duration-500 ease-in-out min-h-72 flex-col items-center justify-center bg-gradient-to-br from-[#5146b5] to-[#8e78dc] px-14 py-12 text-center text-white sm:min-h-80"
+            aria-label="Slide 1 de 3">
+            <div class="mb-4 text-6xl" aria-hidden="true">📚</div>
+            <h2 class="text-2xl font-bold">Planeje sua semana</h2>
+            <p class="mt-2">Visualize o que precisa estudar.</p>
           </div>
-          <div class="slide absolute inset-0 flex opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out min-h-72 flex-col items-center justify-center bg-gradient-to-br from-[#196e83] to-[#42a6a3] px-14 py-12 text-center text-white sm:min-h-80" aria-label="Slide 2 de 3" aria-hidden="true">
-            <div class="mb-4 text-6xl" aria-hidden="true">🎯</div><h2 class="text-2xl font-bold">Defina prioridades</h2><p class="mt-2">Concentre-se nas atividades importantes.</p>
+          <div
+            class="slide absolute inset-0 flex opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out min-h-72 flex-col items-center justify-center bg-gradient-to-br from-[#196e83] to-[#42a6a3] px-14 py-12 text-center text-white sm:min-h-80"
+            aria-label="Slide 2 de 3" aria-hidden="true">
+            <div class="mb-4 text-6xl" aria-hidden="true">🎯</div>
+            <h2 class="text-2xl font-bold">Defina prioridades</h2>
+            <p class="mt-2">Concentre-se nas atividades importantes.</p>
           </div>
-          <div class="slide absolute inset-0 flex opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out min-h-72 flex-col items-center justify-center bg-gradient-to-br from-[#7a3c8d] to-[#c477aa] px-14 py-12 text-center text-white sm:min-h-80" aria-label="Slide 3 de 3" aria-hidden="true">
-            <div class="mb-4 text-6xl" aria-hidden="true">✅</div><h2 class="text-2xl font-bold">Acompanhe suas entregas</h2><p class="mt-2">Veja o que já foi concluído.</p>
+          <div
+            class="slide absolute inset-0 flex opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out min-h-72 flex-col items-center justify-center bg-gradient-to-br from-[#7a3c8d] to-[#c477aa] px-14 py-12 text-center text-white sm:min-h-80"
+            aria-label="Slide 3 de 3" aria-hidden="true">
+            <div class="mb-4 text-6xl" aria-hidden="true">✅</div>
+            <h2 class="text-2xl font-bold">Acompanhe suas entregas</h2>
+            <p class="mt-2">Veja o que já foi concluído.</p>
           </div>
-          <button id="slideAnterior" class="absolute top-1/2 left-3 -translate-y-1/2 rounded-full bg-black/20 p-2 text-2xl text-white hover:bg-black/35 focus-visible:outline-2 focus-visible:outline-white" type="button" aria-label="Slide anterior">‹</button>
-          <button id="proximoSlide" class="absolute top-1/2 right-3 -translate-y-1/2 rounded-full bg-black/20 p-2 text-2xl text-white hover:bg-black/35 focus-visible:outline-2 focus-visible:outline-white" type="button" aria-label="Próximo slide">›</button>
+          <button id="slideAnterior"
+            class="absolute top-1/2 left-3 -translate-y-1/2 rounded-full bg-black/20 p-2 text-2xl text-white hover:bg-black/35 focus-visible:outline-2 focus-visible:outline-white"
+            type="button" aria-label="Slide anterior">‹</button>
+          <button id="proximoSlide"
+            class="absolute top-1/2 right-3 -translate-y-1/2 rounded-full bg-black/20 p-2 text-2xl text-white hover:bg-black/35 focus-visible:outline-2 focus-visible:outline-white"
+            type="button" aria-label="Próximo slide">›</button>
           <div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2" aria-label="Selecionar slide">
-            <button class="indicador h-2.5 w-7 rounded-full bg-white" type="button" aria-label="Mostrar slide 1" aria-current="true" data-slide="0"></button>
-            <button class="indicador h-2.5 w-2.5 rounded-full bg-white/50" type="button" aria-label="Mostrar slide 2" data-slide="1"></button>
-            <button class="indicador h-2.5 w-2.5 rounded-full bg-white/50" type="button" aria-label="Mostrar slide 3" data-slide="2"></button>
+            <button class="indicador h-2.5 w-7 rounded-full bg-white" type="button" aria-label="Mostrar slide 1"
+              aria-current="true" data-slide="0"></button>
+            <button class="indicador h-2.5 w-2.5 rounded-full bg-white/50" type="button" aria-label="Mostrar slide 2"
+              data-slide="1"></button>
+            <button class="indicador h-2.5 w-2.5 rounded-full bg-white/50" type="button" aria-label="Mostrar slide 3"
+              data-slide="2"></button>
           </div>
         </div>
       </div>
@@ -58,40 +99,122 @@
       <h2 id="tituloRecursos" class="text-2xl font-bold">Recursos do painel</h2>
       <p class="mt-2 mb-6 text-slate-600">Três formas simples de acompanhar sua rotina acadêmica.</p>
       <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-        <article class="rounded-2xl bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-md"><div class="mb-4 text-4xl" aria-hidden="true">📝</div><h3 class="text-xl font-bold">Cadastro de tarefas</h3><p class="mt-2 mb-5 text-slate-600">Registre suas atividades e organize os próximos compromissos.</p><a href="#cadastro" class="inline-block rounded-lg border border-[#5146b5] px-4 py-2 font-medium text-[#5146b5] hover:bg-[#5146b5] hover:text-white">Cadastrar</a></article>
-        <article class="rounded-2xl bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-md"><div class="mb-4 text-4xl" aria-hidden="true">📅</div><h3 class="text-xl font-bold">Prazos organizados</h3><p class="mt-2 mb-5 text-slate-600">Consulte as datas de entrega e evite esquecer suas tarefas.</p><a href="#atividades" class="inline-block rounded-lg border border-[#5146b5] px-4 py-2 font-medium text-[#5146b5] hover:bg-[#5146b5] hover:text-white">Ver atividades</a></article>
-        <article class="rounded-2xl bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-md"><div class="mb-4 text-4xl" aria-hidden="true">📊</div><h3 class="text-xl font-bold">Acompanhamento</h3><p class="mt-2 mb-5 text-slate-600">Confira quais atividades estão pendentes ou concluídas.</p><a href="#atividades" class="inline-block rounded-lg border border-[#5146b5] px-4 py-2 font-medium text-[#5146b5] hover:bg-[#5146b5] hover:text-white">Acompanhar</a></article>
+        <article class="rounded-2xl bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+          <div class="mb-4 text-4xl" aria-hidden="true">📝</div>
+          <h3 class="text-xl font-bold">Cadastro de tarefas</h3>
+          <p class="mt-2 mb-5 text-slate-600">Registre suas atividades e organize os próximos compromissos.</p><a
+            href="#cadastro"
+            class="inline-block rounded-lg border border-[#5146b5] px-4 py-2 font-medium text-[#5146b5] hover:bg-[#5146b5] hover:text-white">Cadastrar</a>
+        </article>
+        <article class="rounded-2xl bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+          <div class="mb-4 text-4xl" aria-hidden="true">📅</div>
+          <h3 class="text-xl font-bold">Prazos organizados</h3>
+          <p class="mt-2 mb-5 text-slate-600">Consulte as datas de entrega e evite esquecer suas tarefas.</p><a
+            href="#atividades"
+            class="inline-block rounded-lg border border-[#5146b5] px-4 py-2 font-medium text-[#5146b5] hover:bg-[#5146b5] hover:text-white">Ver
+            atividades</a>
+        </article>
+        <article class="rounded-2xl bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+          <div class="mb-4 text-4xl" aria-hidden="true">📊</div>
+          <h3 class="text-xl font-bold">Acompanhamento</h3>
+          <p class="mt-2 mb-5 text-slate-600">Confira quais atividades estão pendentes ou concluídas.</p><a
+            href="#atividades"
+            class="inline-block rounded-lg border border-[#5146b5] px-4 py-2 font-medium text-[#5146b5] hover:bg-[#5146b5] hover:text-white">Acompanhar</a>
+        </article>
       </div>
     </section>
     <section class="bg-white py-14" id="atividades" aria-labelledby="tituloAtividades">
       <div class="mx-auto max-w-6xl px-5">
-        <div class="mb-6 flex flex-wrap items-center justify-between gap-4"><div><h2 id="tituloAtividades" class="text-2xl font-bold">Minhas atividades</h2><p class="mt-2 text-slate-600">Acompanhe e atualize a situação das suas tarefas acadêmicas.</p></div><span id="contadorAtividades" class="rounded-full bg-[#5146b5] px-4 py-2 text-sm font-semibold text-white" aria-live="polite">5 atividades</span></div>
-        <div class="overflow-x-auto rounded-xl border border-slate-200"><table class="w-full min-w-[660px] border-collapse text-left text-sm"><caption class="sr-only">Lista de atividades com disciplina, prazo, situação e ações</caption><thead class="bg-[#e9e6ff] text-[#25243d]"><tr><th class="px-5 py-4 font-bold" scope="col">Atividade</th><th class="px-5 py-4 font-bold" scope="col">Disciplina</th><th class="px-5 py-4 font-bold" scope="col">Prazo</th><th class="px-5 py-4 font-bold" scope="col">Situação</th><th class="px-5 py-4 font-bold" scope="col">Ações</th></tr></thead><tbody id="corpoTabela" class="divide-y divide-slate-100"></tbody></table></div>
+        <div class="mb-6 flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <h2 id="tituloAtividades" class="text-2xl font-bold">Minhas atividades</h2>
+            <p class="mt-2 text-slate-600">Acompanhe e atualize a situação das suas tarefas acadêmicas.</p>
+          </div><span id="contadorAtividades"
+            class="rounded-full bg-[#5146b5] px-4 py-2 text-sm font-semibold text-white" aria-live="polite">5
+            atividades</span>
+        </div>
+        <div class="overflow-x-auto rounded-xl border border-slate-200">
+          <table class="w-full min-w-[660px] border-collapse text-left text-sm">
+            <caption class="sr-only">Lista de atividades com disciplina, prazo, situação e ações</caption>
+            <thead class="bg-[#e9e6ff] text-[#25243d]">
+              <tr>
+                <th class="px-5 py-4 font-bold" scope="col">Atividade</th>
+                <th class="px-5 py-4 font-bold" scope="col">Disciplina</th>
+                <th class="px-5 py-4 font-bold" scope="col">Prazo</th>
+                <th class="px-5 py-4 font-bold" scope="col">Situação</th>
+                <th class="px-5 py-4 font-bold" scope="col">Ações</th>
+              </tr>
+            </thead>
+            <tbody id="corpoTabela" class="divide-y divide-slate-100"></tbody>
+          </table>
+        </div>
       </div>
     </section>
     <section class="mx-auto max-w-3xl px-5 py-14" id="cadastro" aria-labelledby="tituloCadastro">
-      <h2 id="tituloCadastro" class="text-2xl font-bold">Cadastrar atividade</h2><p class="mt-2 mb-6 text-slate-600">Preencha os dados abaixo para adicionar uma tarefa à tabela.</p>
+      <h2 id="tituloCadastro" class="text-2xl font-bold">Cadastrar atividade</h2>
+      <p class="mt-2 mb-6 text-slate-600">Preencha os dados abaixo para adicionar uma tarefa à tabela.</p>
       <form id="formAtividade" class="rounded-2xl bg-white p-6 shadow-sm sm:p-8" novalidate>
         <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
-          <div><label for="nomeAtividade" class="mb-2 block font-medium">Nome da atividade</label><input id="nomeAtividade" type="text" minlength="3" maxlength="80" placeholder="Ex.: Estudar Tailwind" required class="campo"><p class="erro mt-1 hidden text-sm text-red-600">Informe uma atividade com pelo menos 3 caracteres.</p></div>
-          <div><label for="email" class="mb-2 block font-medium">E-mail</label><input id="email" type="email" placeholder="seuemail@exemplo.com" required class="campo"><p class="erro mt-1 hidden text-sm text-red-600">Informe um e-mail válido.</p></div>
-          <div><label for="disciplina" class="mb-2 block font-medium">Disciplina</label><select id="disciplina" name="disciplina" class="campo" required><option value="">Selecione</option><option>Desenvolvimento Web</option><option>Banco de Dados</option><option>Engenharia de Software</option><option>Algoritmos</option><option>Outras</option></select><p class="erro mt-1 hidden text-sm text-red-600">Selecione uma disciplina.</p></div>
-          <div><label for="prazo" class="mb-2 block font-medium">Data de entrega</label><input id="prazo" type="date" required class="campo"><p class="erro mt-1 hidden text-sm text-red-600">Informe a data de entrega.</p></div>
-          <div class="md:col-span-2"><label for="observacoes" class="mb-2 block font-medium">Observações</label><textarea id="observacoes" rows="3" maxlength="300" placeholder="Detalhes da atividade (opcional)" class="campo"></textarea></div>
-          <div class="md:col-span-2 flex flex-wrap gap-3"><button type="submit" class="rounded-lg bg-[#5146b5] px-5 py-3 font-semibold text-white hover:bg-[#3f3695]">Cadastrar atividade</button><button id="abrirModal" type="button" class="rounded-lg border border-[#5146b5] px-5 py-3 font-semibold text-[#5146b5] hover:bg-[#5146b5]/5">Visualizar modal</button></div>
+          <div><label for="nomeAtividade" class="mb-2 block font-medium">Nome da atividade</label><input
+              id="nomeAtividade" type="text" minlength="3" maxlength="80" placeholder="Ex.: Estudar Tailwind" required
+              class="campo">
+            <p class="erro mt-1 hidden text-sm text-red-600">Informe uma atividade com pelo menos 3 caracteres.</p>
+          </div>
+          <div><label for="email" class="mb-2 block font-medium">E-mail</label><input id="email" type="email"
+              placeholder="seuemail@exemplo.com" required class="campo">
+            <p class="erro mt-1 hidden text-sm text-red-600">Informe um e-mail válido.</p>
+          </div>
+          <div><label for="disciplina" class="mb-2 block font-medium">Disciplina</label><select id="disciplina"
+              name="disciplina" class="campo" required>
+              <option value="">Selecione</option>
+              <option>Desenvolvimento Web</option>
+              <option>Banco de Dados</option>
+              <option>Engenharia de Software</option>
+              <option>Algoritmos</option>
+              <option>Outras</option>
+            </select>
+            <p class="erro mt-1 hidden text-sm text-red-600">Selecione uma disciplina.</p>
+          </div>
+          <div><label for="prazo" class="mb-2 block font-medium">Data de entrega</label><input id="prazo" type="date"
+              required class="campo">
+            <p class="erro mt-1 hidden text-sm text-red-600">Informe a data de entrega.</p>
+          </div>
+          <div class="md:col-span-2"><label for="observacoes"
+              class="mb-2 block font-medium">Observações</label><textarea id="observacoes" rows="3" maxlength="300"
+              placeholder="Detalhes da atividade (opcional)" class="campo"></textarea></div>
+          <div class="md:col-span-2 flex flex-wrap gap-3"><button type="submit"
+              class="rounded-lg bg-[#5146b5] px-5 py-3 font-semibold text-white hover:bg-[#3f3695]">Cadastrar
+              atividade</button><button id="abrirModal" type="button"
+              class="rounded-lg border border-[#5146b5] px-5 py-3 font-semibold text-[#5146b5] hover:bg-[#5146b5]/5">Visualizar
+              modal</button></div>
         </div>
       </form>
-      <p class="mt-4 text-sm text-slate-600">Os dados são demonstrativos e ficam armazenados somente neste navegador. O e-mail não é enviado.</p>
+      <p class="mt-4 text-sm text-slate-600">Os dados são demonstrativos e ficam armazenados somente neste navegador. O
+        e-mail não é enviado.</p>
     </section>
   </main>
-  <footer class="bg-[#5146b5] px-5 py-7 text-center text-white"><p class="font-semibold">Organizaê — Painel de Estudos</p><small>Projeto acadêmico desenvolvido com Tailwind CSS.</small></footer>
-  <div id="modalConfirmacao" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/55 px-4 py-6" role="presentation">
-    <div id="conteudoModal" class="w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl" role="dialog" aria-modal="true" aria-labelledby="tituloModal" aria-describedby="mensagemModal" tabindex="-1">
-      <div class="flex items-start justify-between gap-4"><h2 id="tituloModal" class="text-xl font-bold">Atividade cadastrada!</h2><button id="fecharModalX" class="rounded-lg px-2 text-2xl text-slate-500 hover:bg-slate-100" type="button" aria-label="Fechar">×</button></div>
+  <footer class="bg-[#5146b5] px-5 py-7 text-center text-white">
+    <p class="font-semibold">Organizaê — Painel de Estudos</p><small>Projeto acadêmico desenvolvido com Tailwind
+      CSS.</small>
+  </footer>
+  <div id="modalConfirmacao" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/55 px-4 py-6"
+    role="presentation">
+    <div id="conteudoModal" class="w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl" role="dialog" aria-modal="true"
+      aria-labelledby="tituloModal" aria-describedby="mensagemModal" tabindex="-1">
+      <div class="flex items-start justify-between gap-4">
+        <h2 id="tituloModal" class="text-xl font-bold">Atividade cadastrada!</h2><button id="fecharModalX"
+          class="rounded-lg px-2 text-2xl text-slate-500 hover:bg-slate-100" type="button"
+          aria-label="Fechar">×</button>
+      </div>
       <p id="mensagemModal" class="mt-4 text-slate-600">Sua atividade foi adicionada à tabela.</p>
-      <div class="mt-7 flex justify-end gap-3"><button id="fecharModal" type="button" class="rounded-lg border border-slate-300 px-4 py-2 font-medium hover:bg-slate-100">Fechar</button><button id="verAtividades" type="button" class="rounded-lg bg-[#5146b5] px-4 py-2 font-medium text-white hover:bg-[#3f3695]">Ver atividades</button></div>
+      <div class="mt-7 flex justify-end gap-3"><button id="fecharModal" type="button"
+          class="rounded-lg border border-slate-300 px-4 py-2 font-medium hover:bg-slate-100">Fechar</button><button
+          id="verAtividades" type="button"
+          class="rounded-lg bg-[#5146b5] px-4 py-2 font-medium text-white hover:bg-[#3f3695]">Ver atividades</button>
+      </div>
     </div>
   </div>
   <script src="funcoes.js"></script>
 </body>
+
 </html>
