@@ -34,14 +34,14 @@
         <a href="#cadastro" class="mt-7 inline-block rounded-lg bg-[#5146b5] px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-[#3f3695]">Adicionar atividade</a>
       </div>
       <div class="lg:col-span-7">
-        <div id="carrosselDestaques" class="relative overflow-hidden rounded-2xl shadow-lg" aria-label="Destaques do Organizaê" aria-roledescription="carrossel" tabindex="0">
-          <div class="slide flex min-h-72 flex-col items-center justify-center bg-gradient-to-br from-[#5146b5] to-[#8e78dc] px-14 py-12 text-center text-white sm:min-h-80" aria-label="Slide 1 de 3">
+        <div id="carrosselDestaques" class="relative min-h-72 overflow-hidden rounded-2xl shadow-lg sm:min-h-80" aria-label="Destaques do Organizaê" aria-roledescription="carrossel" tabindex="0">
+          <div class="slide absolute inset-0 flex opacity-100 transition-opacity duration-500 ease-in-out min-h-72 flex-col items-center justify-center bg-gradient-to-br from-[#5146b5] to-[#8e78dc] px-14 py-12 text-center text-white sm:min-h-80" aria-label="Slide 1 de 3">
             <div class="mb-4 text-6xl" aria-hidden="true">📚</div><h2 class="text-2xl font-bold">Planeje sua semana</h2><p class="mt-2">Visualize o que precisa estudar.</p>
           </div>
-          <div class="slide hidden min-h-72 flex-col items-center justify-center bg-gradient-to-br from-[#196e83] to-[#42a6a3] px-14 py-12 text-center text-white sm:min-h-80" aria-label="Slide 2 de 3" aria-hidden="true">
+          <div class="slide absolute inset-0 flex opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out min-h-72 flex-col items-center justify-center bg-gradient-to-br from-[#196e83] to-[#42a6a3] px-14 py-12 text-center text-white sm:min-h-80" aria-label="Slide 2 de 3" aria-hidden="true">
             <div class="mb-4 text-6xl" aria-hidden="true">🎯</div><h2 class="text-2xl font-bold">Defina prioridades</h2><p class="mt-2">Concentre-se nas atividades importantes.</p>
           </div>
-          <div class="slide hidden min-h-72 flex-col items-center justify-center bg-gradient-to-br from-[#7a3c8d] to-[#c477aa] px-14 py-12 text-center text-white sm:min-h-80" aria-label="Slide 3 de 3" aria-hidden="true">
+          <div class="slide absolute inset-0 flex opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out min-h-72 flex-col items-center justify-center bg-gradient-to-br from-[#7a3c8d] to-[#c477aa] px-14 py-12 text-center text-white sm:min-h-80" aria-label="Slide 3 de 3" aria-hidden="true">
             <div class="mb-4 text-6xl" aria-hidden="true">✅</div><h2 class="text-2xl font-bold">Acompanhe suas entregas</h2><p class="mt-2">Veja o que já foi concluído.</p>
           </div>
           <button id="slideAnterior" class="absolute top-1/2 left-3 -translate-y-1/2 rounded-full bg-black/20 p-2 text-2xl text-white hover:bg-black/35 focus-visible:outline-2 focus-visible:outline-white" type="button" aria-label="Slide anterior">‹</button>

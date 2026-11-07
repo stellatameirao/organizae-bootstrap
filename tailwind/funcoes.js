@@ -211,14 +211,16 @@ const indicadores = [...carrossel.querySelectorAll('.indicador')];
 
 let slideAtual = 0;
 
+
 function mostrarSlide(indice) {
   slideAtual = (indice + slides.length) % slides.length;
 
   slides.forEach((slide, posicao) => {
     const ativo = posicao === slideAtual;
 
-    slide.classList.toggle('hidden', !ativo);
-    slide.classList.toggle('flex', ativo);
+    slide.classList.toggle('opacity-100', ativo);
+    slide.classList.toggle('opacity-0', !ativo);
+    slide.classList.toggle('pointer-events-none', !ativo);
     slide.setAttribute('aria-hidden', String(!ativo));
   });
 
